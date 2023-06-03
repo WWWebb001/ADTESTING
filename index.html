@@ -69,24 +69,33 @@
         }
         
         /* Ad banner style */
-        .ad-banner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 73px; /* Set the minimum height of the container */
-            min-width: 500px; /* Set the minimum width of the container */
-            margin-bottom: 20px;
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 10px;
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            color: #999;
-        }
+.ad-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+.ad-banner > div {
+  width: 100%;
+  max-width: 895px;
+  min-height: 73px;
+}
+
+@media (max-width: 960px) {
+  .ad-banner {
+    flex-direction: column;
+  }
+
+  .ad-banner > div {
+    width: 100%;
+    max-width: 100%;
+  }
+}
     </style>
 </head>
 <body>
