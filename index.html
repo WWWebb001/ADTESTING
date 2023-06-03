@@ -108,16 +108,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 73px; /* Set the minimum height of the container */
-        min-width: 500px; /* Set the minimum width of the container */
     }
 </style>
 
 <div class="ad-banner">
 <!-- /55729129/DO_NOT_USE_HERO_TEST_BW_895x130 -->
-<div id='div-gpt-ad-1685803453014-0' style='min-width: 500px; min-height: 73px;'>
+<div id='div-gpt-ad-1685803453014-0'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1685803453014-0'); });
+    googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1685803453014-0');
+
+      // Get the rendered ad dimensions
+      var adElement = document.getElementById('div-gpt-ad-1685803453014-0');
+      var adWidth = adElement.offsetWidth;
+      var adHeight = adElement.offsetHeight;
+
+      // Update the container dimensions
+      var container = document.querySelector('.ad-banner');
+      container.style.minWidth = adWidth + 'px';
+      container.style.minHeight = adHeight + 'px';
+    });
   </script>
 </div>
 </div>
