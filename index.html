@@ -77,11 +77,6 @@
             background-color: #f0f0f0;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            top: 30px; /* Adjust this value to position the ad banner below the grey top bar */
-            left: 0;
-            right: 0;
-            z-index: 100; /* Set a higher z-index to keep the ad banner above other content */
         }
 
         .ad-banner > div {
@@ -124,13 +119,20 @@
             text-align: center;
             padding: 10px;
         }
+
+        /* Sticky ad banner */
+        .sticky-ad {
+            position: sticky;
+            top: 30px; /* Adjust this value to position the ad banner below the grey top bar */
+            z-index: 100; /* Set a higher z-index to keep the ad banner above other content */
+        }
     </style>
 </head>
 <body>
     <!-- Grey top bar -->
     <div class="grey-top-bar"></div>
 
-    <div class="ad-banner">
+    <div class="ad-banner sticky-ad">
         <!-- 17. Takeover Banner - ROS  -->
         <broadstreet-zone zone-id="152957"></broadstreet-zone>
     </div>
