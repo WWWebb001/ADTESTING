@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/55729129/DO_NOT_USE_HERO_TEST_BW_895x130', [895, 130], 'div-gpt-ad-1685823050198-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
-</script>
-  
 <script src="https://cdn.broadstreetads.com/init-2.min.js"></script>
 <script>broadstreet.watch({ networkId: 8302 })</script>
   
@@ -27,6 +16,13 @@
             background-color: #f8f8f8;
         }
         
+        /* Grey top bar */
+        .grey-top-bar {
+            height: 30px;
+            background-color: #dcdcdc;
+            width: 100%;
+        }
+
         /* Responsive layout */
         .container {
             max-width: 960px;
@@ -71,81 +67,78 @@
             margin-bottom: 10px;
         }
         
-
-        
         /* Ad banner style */
-.ad-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 10px;
-}
+        .ad-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
 
-.ad-banner > div {
-  width: 100%;
-  max-width: 895px;
-  min-height: 5px;
-}
+        .ad-banner > div {
+            width: 100%;
+            max-width: 895px;
+            min-height: 5px;
+        }
 
-@media (max-width: 960px) {
-  .ad-banner {
-    flex-direction: column;
-  }
+        @media (max-width: 960px) {
+            .ad-banner {
+                flex-direction: column;
+            }
 
-  .ad-banner > div {
-    width: 100%;
-    max-width: 100%;
-  }      
-    }
-        
-         /* Ad banner 2 style */
-.ad-banner2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin-bottom: 20px;
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-}
-      }
+            .ad-banner > div {
+                width: 100%;
+                max-width: 100%;
+            }      
+        }
 
-           /* Ad banner 3 style */
-.ad-banner3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin-bottom: 20px;
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
+        /* Ad banner 2 style */
+        .ad-banner2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Ad banner 3 style */
+        .ad-banner3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
-
 </head>
 <body>
+    <!-- Grey top bar -->
+    <div class="grey-top-bar"></div>
+
     <div class="ad-banner">
-<!-- /55729129/DO_NOT_USE_HERO_TEST_BW_895x130 -->
-<div id='div-gpt-ad-1685823050198-0' style='min-width: 895px; min-height: 130px;'>
-  <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1685823050198-0'); });
-  </script>
-</div>
+        <!-- 17. Takeover Banner - ROS  -->
+        <broadstreet-zone zone-id="152957"></broadstreet-zone>
     </div>
-    
- <div class="ad-banner2">
-     <!-- 895x330 TEST HERO Banner -->
-<broadstreet-zone zone-id="152017"></broadstreet-z4
-      </div>
+
+    <div class="ad-banner2">
+        <!-- 895x330 TEST HERO Banner -->
+        <broadstreet-zone zone-id="152017"></broadstreet-zone>
     </div>
-      <!-- 15. Pop-up-ad - HOMEPAGE -->
-<broadstreet-zone zone-id="152955"></broadstreet-zone>
-     <div class="container">
+
+    <!-- 15. Pop-up-ad - HOMEPAGE -->
+    <broadstreet-zone zone-id="152955"></broadstreet-zone>
+
+    <div class="container">
         <header>
             <h1>News Site</h1>
         </header>
@@ -162,12 +155,15 @@
               Visitors can redeem an additional free pass with payment by Changi Pay or Mastercard.
 
               Alternatively, Gamer Passes can be purchased for S$5 each.</p>
-    </article>
-</div>
-   <div class="ad-banner">
-<broadstreet-zone zone-id='152962' zone-alias='22. Skyscraper - 1 - ROS'></broadstreet-zone>
-   </div>
-</div>
-<footer>
- <p>© 2023 News Site. All rights reserved.</p>
-</footer>
+        </article>
+    </div>
+
+    <div class="ad-banner">
+        <broadstreet-zone zone-id='152962' zone-alias='22. Skyscraper - 1 - ROS'></broadstreet-zone>
+    </div>
+
+    <footer>
+        <p>© 2023 News Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
